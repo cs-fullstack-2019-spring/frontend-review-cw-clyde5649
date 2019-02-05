@@ -1,0 +1,39 @@
+header,article,section,footer{
+    background: white;
+}
+
+body{
+    margin: 10% 20%;
+    text-align: center;
+    background: white;
+}
+
+.container
+{
+    display: grid;
+    grid-template-areas:
+            "header header"
+            "sidebar content"
+            "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+    text-align: center;
+}
+
+header
+{
+    grid-area: header;
+}
+
+section{
+    grid-area: sidebar;
+}
+
+
+
+footer
+{
+    clear: both;
+    grid-area: footer;
+    margin-bottom: 100%;
+}
